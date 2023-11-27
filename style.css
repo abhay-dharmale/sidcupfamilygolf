@@ -37,8 +37,8 @@ body::-webkit-scrollbar-thumb{
   border-radius: 50%;
   background-color: #95c11e;
   position: fixed;
-  z-index: 99;
-  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  z-index: 9;
+  transition: cubic-bezier(0.39, 0.575, 0.565, 0.1);
 }
 
 #cursor-blur{
@@ -49,7 +49,7 @@ body::-webkit-scrollbar-thumb{
   position: fixed;
   z-index: 9;
   filter: blur(30px);
-  transition: all linear 0.4s;
+   transition: cubic-bezier(0.39, 0.575, 0.565, 0.1);
 }
 #nav{
     height: 150px;
@@ -255,21 +255,22 @@ video{
   gap: 70px;
   position: relative;
   z-index: 10;
+  margin: 88px 0;
 }
 
 .card{
-  height: 80%;
+  height: 90%;
   width: 24%;
   border-radius: 15px;
   background-size: cover;
   background-position: center;
   overflow: hidden;
   transition: all ease 0.6s;
+  z-index: 11;
+  transition: all ease 0.3s;
 }
 
-.card:hover{
-  transform: rotate3d(-1, 3, 0, 15deg);
-}
+
 
 #card-1{
   background-image: url(https://eiwgew27fhz.exactdn.com/wp-content/uploads/2023/02/hero-4.jpg?strip=all&lossy=1&sharp=1&fit=1024%2C1024&ssl=1);

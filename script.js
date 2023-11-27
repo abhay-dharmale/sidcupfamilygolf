@@ -61,18 +61,32 @@ gsap.from(".about img, .about-us", {
     }
 })
 
+
+
+
+$('.card').tilt({
+    maxTilt: 30,
+    perspective: 500,   
+    // easing: "cubic-bezier(1, 0, 0, 1)", 
+    speed: 1000,    
+    transition: true,   
+    disableAxis: null,   
+    reset: true,         
+})
+
+
 gsap.from(".cards-cont .card", {
     scale: 0.8,
     duration: 0.8,
-    stagger: 0.5,
     scrollTrigger: {
         trigger: ".card",
         scroller: "body",
-        start: "top 80%",
-        end: "top 40%",
+        start: "top 70%",
+        end: "top 50%",
         scrub: true,
     }
-})
+});
+
 
 gsap.from(".page-3 #quote-left", {
     y: -70,
